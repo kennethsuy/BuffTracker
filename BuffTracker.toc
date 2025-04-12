@@ -1,0 +1,8 @@
+## Interface: 100207
+## Title: BuffTracker
+## Notes: Tracks and displays specific buffs.
+## Author: Maulface w/ ChatGPT
+## Version: 1.0
+## SavedVariables: BuffTrackerDB
+
+BuffTracker.lua
