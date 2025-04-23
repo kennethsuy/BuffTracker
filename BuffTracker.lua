@@ -75,8 +75,9 @@ local function OnEvent(self, event, unit)
             iconFrame.icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
 
             iconFrame.stackCountText = iconFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-            iconFrame.stackCountText:SetPoint("BOTTOMRIGHT", iconFrame, "BOTTOMRIGHT", -2, 2)
-            iconFrame.stackCountText:SetFont("Fonts\\FRIZQT___.TTF", 12, "OUTLINE")
+            iconFrame.stackCountText:SetPoint("BOTTOMRIGHT", iconFrame, "BOTTOMRIGHT", 3, -3)
+            iconFrame.stackCountText:SetFont("Fonts\\ARIALN.ttf", 16, "OUTLINE")
+            iconFrame.stackCountText:SetTextColor(1,1,1)
 
             iconFrame.cooldown = CreateFrame("Cooldown", nil, iconFrame, "CooldownFrameTemplate")
             iconFrame.cooldown:SetAllPoints(iconFrame.icon)
@@ -108,7 +109,7 @@ local function OnEvent(self, event, unit)
         end
 
         iconFrame:Show()
-        xOffset = xOffset + 29
+        xOffset = xOffset + 33
     end
 
     for name, frame in pairs(iconFrames) do
